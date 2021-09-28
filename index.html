@@ -504,7 +504,7 @@
                                             <!-- Contact Us Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeE1FQ4RqFnUmaws9Jp5lLKUwQAet-gScjoLUNFAvGPclYTMQ/formresponse" name="contactForm" id="contactForm" target="hidden_iframe" onsubmit="submitted=true;">
+                            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeE1FQ4RqFnUmaws9Jp5lLKUwQAet-gScjoLUNFAvGPclYTMQ/formResponse?" name="contactForm" id="contactForm" target="hidden_iframe" onsubmit="submitted=true;">
                                 <!-- Name input -->
                              <div class="form-floating mb-3">
                                     <input class="form-control" id="entry.126325135" name="entry.126325135" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -854,9 +854,9 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
             <script type="text/javascript">
                 var submitted=false;
-            $('#gform').on('submit', function(e) {
-              $('#gform *').fadeOut(2000);
-              $('#gform').prepend('Your submission has been processed...');
+            $('#contactForm').on('submit', function(e) {
+              $('#contactForm *').fadeOut(2000);
+              $('#contactForm').prepend('Your submission has been processed...');
               });
             </script>
 
