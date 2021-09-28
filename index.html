@@ -504,21 +504,21 @@
                                             <!-- Contact Us Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                            <form action="./mail.php" method="POST" id="contactForm" > 
+                            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeE1FQ4RqFnUmaws9Jp5lLKUwQAet-gScjoLUNFAvGPclYTMQ/formresponse" name="contactForm" id="contactForm" target="hidden_iframe" onsubmit="submitted=true;">
                                 <!-- Name input -->
                              <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" name="fullname" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Full name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    <input class="form-control" id="entry.126325135" name="entry.126325135" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <label for="entry.126325135">Full name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="entry.126325135:required">A name is required.</div>
                                 </div> 
                                 <!-- Email address input -->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    <input class="form-control" id="entry.1942521722" name="entry.1942521722" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <label for="entry.1942521722">Email address</label>
+                                    <div class="invalid-feedback" data-sb-feedback="entry.1942521722:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="entry.1942521722:email">Email is not valid.</div>
                                 </div>
-                                <!-- Phone number input-->
+                                <!-- Phone number input
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                     <label for="phone">Phone number</label>
@@ -529,7 +529,7 @@
                                     <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                     <label for="message">Message</label>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
+                                </div>-->
                                 <!-- Submit success message-->
                                 <!-- This is what your users will see when the form
                                 has successfully submitted -->
@@ -548,6 +548,7 @@
                                <button class="btn btn-dark btn-xl" id="submitButton" type="submit">Send</button>
                                <br />
                             </form> 
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                         </section>
 
                                
@@ -851,6 +852,13 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+            <script type="text/javascript">
+                var submitted=false;
+            $('#gform').on('submit', function(e) {
+              $('#gform *').fadeOut(2000);
+              $('#gform').prepend('Your submission has been processed...');
+              });
+            </script>
 
     </body>
 </html>
