@@ -64,6 +64,9 @@
     scroll-behavior: smooth;
   }
 }
+html {
+  min-height:100%;
+}
 
 body {
   margin: 0;
