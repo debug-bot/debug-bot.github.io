@@ -70,6 +70,7 @@ html {
 
 body {
   display: inline-block !important;
+  width: -webkit-fill-available !important;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -6518,6 +6519,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 1030;
 }
 
