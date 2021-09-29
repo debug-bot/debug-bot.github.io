@@ -11939,6 +11939,9 @@ html {
 .slideshow-container p {
   text-align: center;
 }
+#getintouch button{
+  font-size: 0.7rem !important;
+}
 .mySlides {
   border-radius: 5px 5px 0 0;
   margin: 50px auto;
