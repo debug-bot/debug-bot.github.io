@@ -69,7 +69,6 @@ html {
 }
 
 body {
-  display: inline-block !important;
   width: -webkit-fill-available !important;
   margin: 0;
   font-family: var(--bs-body-font-family);
